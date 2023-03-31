@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "id": "896218",
+      "store": "台北門市",
+      "createdDate": "2019-04-08",
+      "modifiedDate": "2019-04-09"
+    },
+    {
+      "id": "011629",
+      "store": "台中門市",
+      "createdDate": "2019-04-07",
+      "modifiedDate": "2019-04-09"
+    },
+    {
+      "id": "149697",
+      "store": "台東門市",
+      "createdDate": "2019-04-06",
+      "modifiedDate": "2019-04-09"
+    },
+    {
+      "id": "3750",
+      "store": "高雄門市",
+      "createdDate": "2019-04-05",
+      "modifiedDate": "2019-04-09"
+    }
+  ]
+}

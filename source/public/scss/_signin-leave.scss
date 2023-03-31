@@ -1,0 +1,43 @@
+//signing-leave
+.signing {
+    padding: 40px 0;
+
+    nav {
+        .signing-nav-btn {
+            position: relative;
+            background: $bg-gray;
+            border-radius: 0;
+            border: 1px solid $border-gray;
+            padding: 18px 50px 10px 50px;
+            color: rgb(125, 125, 125);
+
+            @include md {
+                padding: 18px 20px 10px;
+            }
+
+            &::before {
+                position: absolute;
+                top: -2px;
+                left: -1px;
+                right: -1px;
+                content: '';
+                height: 8px;
+                background: $border-gray2;
+            }
+
+            +* {
+                margin-left: 5px;
+            }
+
+            &.active {
+                background: #fff;
+                border: 1px solid $border-gray;
+                color: rgb(68, 68, 68);
+
+                &::before {
+                    background: $bg-green3;
+                }
+            }
+        }
+    }
+}

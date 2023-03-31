@@ -1,0 +1,18 @@
+#register{
+    // display: none;
+}
+.signin{
+    display: none;
+}
+
+.v_code{
+    background-image: url('../images/features/robot.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 60px;
+    @include media-breakpoint-down(md){
+        margin-top: 25px;
+        height: 80px;
+    }
+}

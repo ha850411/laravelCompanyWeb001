@@ -1,0 +1,164 @@
+
+.content {
+    background: #fff;
+    padding: 10px 0;
+
+    svg {
+        margin-right: 12px;
+        width: 20px;
+        height: 20px;
+
+        >* {
+            fill: $primary-green;
+        }
+    }
+
+    .index {
+        .index-input {
+            .index-input-search {
+                padding-left: 20px;
+                border-radius: 2px;
+                border: 2px solid $border-gray;
+                border-right: none;
+
+                &::placeholder {
+                    color: $text-gray;
+                }
+            }
+
+            .index-input-button {
+                height: 42.5px;
+                border: 2px solid $border-gray;
+                border-left: none;
+                border-radius: 2px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                svg {
+                    width: 20px;
+                    height: 18px;
+
+                    >* {
+                        fill: $text-gray;
+                    }
+                }
+            }
+        }
+
+        .index-main {
+
+            .announcement,
+            .notice {
+                width: 100%;
+
+                .main-title {
+                    position: relative;
+                    padding: 10px 0;
+                    background-color: #fff;
+                    background-clip: border-box;
+                    border: 2px solid $border-gray;
+                    border-bottom: 0;
+                    font-weight: 900;
+                }
+
+                .card {
+                    border: $border-gray 2px solid;
+
+                    &:first-child {
+                        button {
+                            &::before {
+                                position: absolute;
+                                left: 5%;
+                                top: 0;
+                                content: '';
+                                width: 90%;
+                                height: 1px;
+                                background: $border-gray;
+                                transition: all .5s;
+                            }
+
+                            &.collapsed {
+                                &::before {
+                                    left: 0;
+                                    right: 0;
+                                    top: 0;
+                                    content: '';
+                                    width: 100%;
+                                    height: 2px;
+                                    background: $border-gray;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .collapse-title {
+                    position: relative;
+                    outline: none;
+                    font-weight: 900;
+                    font-size: 16px;
+                    color: $text-black2;
+                    background: #fff;
+                    padding-top: 25px;
+                    padding-bottom: 10px;
+                    cursor: pointer;
+                    transition: all .5s;
+                    -webkit-text-size-adjust: none;
+
+                    .new {
+                        &::after {
+                            content: 'NEW';
+                            padding: 1px 6px;
+                            margin-left: 5px;
+                            margin-top: 1.5px; // line-height: 16px;
+                            vertical-align: text-top;
+                            color: #fff;
+                            background: rgb(225, 26, 22);
+                            font-size: 12px;
+                            -webkit-transform: scale(.8);
+                            transform: scale(0.8);
+                            display: inline-block;
+                        }
+                    }
+
+                    i {
+                        transition: all .5s;
+                    }
+
+                    &.collapsed {
+                        background: $bg-gray;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+
+                        i {
+                            -webkit-transform: rotate(180deg);
+                            -moz-transform: rotate(180deg);
+                            transform: rotate(180deg);
+                        }
+
+                        &.nothing {
+                            color: $text-gray2;
+                            cursor: default;
+
+                            i {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                .date {
+                    padding-left: 1.25rem;
+                    color: rgb(137, 137, 137);
+                    font-size: 14px;
+                }
+
+                .collapse-text {
+                    color: rgb(137, 137, 137);
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

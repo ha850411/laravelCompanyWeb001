@@ -1,0 +1,245 @@
+//header
+.menu-show .menu {
+    max-height: 700px !important;
+}
+
+.header {
+    background: rgb(255, 255, 255);
+
+    .header-white {
+        .company {
+            padding: 20px 0;
+
+            img {
+                // width: 30px;
+                 height: 35px;
+            }
+
+            .company-name {
+                margin-left: 10px;
+                // font-size: 25px;
+                font-size: 26px;
+                color: $text-black;
+                line-height: 40px;
+                font-weight: 900;
+
+                @include xl {
+                    display: none;
+                    font-size: 20px;
+                    margin-left: 70px;
+                }
+
+                @include xs {
+                    font-size: 16px;
+                    margin-left: 45px;
+                }
+                &-r{
+                    margin-left: 10px;
+                    font-size: 35px;
+                    color: $text-black;
+                    line-height: 40px;
+                    font-weight: 900;
+                    display: none;
+                    @include xl {
+                        display: inline-block;
+                        font-size: 20px;
+                        margin-left: 70px;
+                    }
+    
+                    @include xs {
+                        font-size: 16px;
+                        margin-left: 45px;
+                    }
+                }
+            }
+        }
+
+        .sign {
+            color: $text-black3;
+
+            >* {
+                cursor: pointer;
+            }
+
+            .admin {
+                &::after {
+                    display: inline-block;
+                    vertical-align: middle;
+                    content: '';
+                    width: 2px;
+                    height: 20px;
+                    background: $text-gray;
+                    margin: 0 20px;
+
+                    @include md {
+                        display: none;
+                    }
+                }
+
+                svg {
+                    margin-right: 12px;
+                    width: 30px;
+                    height: 30px;
+
+                    >* {
+                        fill: $text-gray;
+                    }
+                }
+            }
+
+            .sign-in {
+                i {
+                    font-size: 30px;
+                    color: $text-gray;
+                }
+
+                svg {
+                    width: 30px;
+                    height: 30px;
+
+                    >* {
+                        fill: $text-gray;
+                    }
+                }
+            }
+        }
+    }
+
+    .nav {
+        color: #fff; // padding: 10px 0;
+        background: -webkit-linear-gradient(90deg, $bg-green2 0%, $bg-green 100%);
+        background: -o-linear-gradient(90deg, $bg-green2 0%, $bg-green 100%);
+        background: -moz-linear-gradient(90deg, $bg-green2 0%, $bg-green 100%);
+        background: linear-gradient(90deg, $bg-green2 0%, $bg-green 100%);
+
+        .menu {
+            font-size: 16px;
+            line-height: 30px;
+            margin: 0;
+
+            @include lg {
+                max-height: 0px;
+                overflow: hidden;
+                transition: max-height .5s;
+                position: absolute;
+                z-index: 100;
+                // top: 155px;
+                top: 165px;
+                left: 0;
+                right: 0;
+                background: -webkit-linear-gradient(90deg, $bg-green2 0%, $bg-green 100%);
+                background: -o-linear-gradient(90deg, $bg-green2 0%, $bg-green 100%);
+                background: -moz-linear-gradient(90deg, $bg-green2 0%, $bg-green 100%);
+                background: linear-gradient(90deg, $bg-green2 0%, $bg-green 100%);
+                text-align: center;
+            }
+
+            li {
+                position: relative;
+                z-index: 100;
+
+                &:hover {
+                    .more-menu {
+                        display: block;
+
+                        @include lg {
+                            display: none;
+                        }
+                    }
+                }
+
+                a {
+                    color: #fff;
+                    padding: 10px 20px;
+
+                    @include lg {
+                        padding: 10px 0 10px 50px;
+                    }
+
+                    @include md {
+                        padding: 10px 0 10px 0;
+                    }
+
+                    &:hover {
+                        background-color: rgb(0, 146, 146);
+                    }
+
+                    &.active {
+                        background-color: rgb(0, 146, 146);
+                    }
+                }
+
+                .more-menu {
+                    display: none;
+                    position: absolute;
+                    z-index: 101;
+                    width: 100%;
+                    top: 100%;
+                    font-weight: bold;
+                    background: #fff;
+                    box-shadow: rgb(224, 224, 224) 1px 1px 3px, rgb(224, 224, 224) -1px 0px 3px;
+
+                    @include lg {
+                        position: relative;
+                        border-bottom: 5px solid $bg-gray;
+                    }
+
+                    a {
+                        color: rgb(171, 171, 171);
+
+                        &:hover {
+                            color: $primary-green;
+                            background-color: #fff;
+
+                            &.more-icon {
+                                svg {
+                                    >* {
+                                        fill: $primary-green;
+                                    }
+                                }
+                            }
+                        }
+
+                        &.more-icon {
+                            svg {
+                                >* {
+                                    fill: rgb(171, 171, 171);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .nav-menu-burgermenu {
+            display: none; // margin: 16px 6px 16px auto;
+
+            @include lg {
+                display: block;
+            }
+
+            a {
+                display: inline-block;
+                color: #fff;
+                font-size: 30px;
+                padding: 20px 30px;
+            }
+        }
+    }
+}
+
+
+//sign-header 
+.logo{
+    width: 150px;
+    height: 60px;
+    background-image: url('../images/logo.png');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    @include md{
+        margin: 30px 0 20px;
+
+    }
+}

@@ -1,0 +1,219 @@
+.arrow_right {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        right: -10px;
+        top: calc(50% - 25px);
+        font-family: 'FontAwesome';
+        content: '\f0da';
+        font-weight: normal;
+        font-style: normal;
+        color: #adb5bd;
+        // color: #28a745;
+        font-size: 50px;
+
+        @include media-breakpoint-down(md) {
+            content: '\f0d7';
+            right: auto;
+            left: calc(50% - 15px);
+            top: auto;
+            bottom: -60px;
+        }
+    }
+
+    &.active {
+        &::after {
+            color: #28a745;
+        }
+    }
+}
+
+.arrow_right_two {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        right: -10px;
+        top: calc(50% - 25px);
+        font-family: 'FontAwesome';
+        content: '\f0da';
+        font-weight: normal;
+        font-style: normal;
+        // color: #adb5bd;
+        color: #28a745;
+        font-size: 50px;
+
+        @include media-breakpoint-down(xl) {
+            display: none;
+            content: '\f0d7';
+            right: auto;
+            left: calc(50% - 15px);
+            top: auto;
+            bottom: -60px;
+        }
+    }
+
+    &.active {
+        &::after {
+            color: #28a745;
+        }
+    }
+}
+
+.arrow_down {
+    position: relative;
+
+    &::after {
+        display: none;
+        position: absolute;
+        left: calc(50% - 15px);
+        top: -60px;
+        font-family: 'FontAwesome';
+        content: '\f0d7';
+        font-weight: normal;
+        font-style: normal;
+        color: #adb5bd;
+        // color: #28a745;
+        font-size: 50px;
+
+        @include media-breakpoint-down(xl) {
+            display: block;
+        }
+    }
+
+    &.for4 {
+        &::after {
+            display: block;
+            color: #28a745;
+
+        }
+    }
+
+    &.active {
+        &::after {
+            color: #28a745;
+        }
+    }
+}
+
+
+.card-body-template {
+    width: 100%;
+    margin: 0 auto;
+}
+
+//table 表格(範本資料.產品資料等)
+
+//範本資料 展開按鈕
+tbody>tr[role="row"]>td:first-child,
+tbody>tr[role="row"]>th:first-child {
+//     position: relative;
+//     cursor: pointer;
+//     padding-left: 40px;
+
+    &::before {
+        top: calc(50% - 7px ) !important;
+//         top: 12px;
+//         // left: calc(50% - 12px);
+//         left: 4px;
+//         height: 14px;
+//         height: 20px;
+//         width: 20px;
+//         display: block;
+//         position: absolute;
+//         color: white;
+//         border: 2px solid white;
+//         border-radius: 20px;
+//         box-shadow: 0 0 3px #444;
+//         box-sizing: content-box;
+//         text-align: center;
+//         text-indent: 0 !important;
+//         font-family: 'Courier New', Courier, monospace;
+//         line-height: 20px;
+//         content: '+';
+//         font-size: 20px;
+//         background-color: #31b131;
+    }
+}
+
+// .example>tbody>tr.shown>td:first-child,
+// .example>tbody>tr.shown>th:first-child {
+//     &::before {
+//         content: '-';
+//         background-color: #d33333;
+//     }
+// }
+
+
+.list-type-btn-group {
+
+    @include media-breakpoint-down(xs) {
+        width: 100%;
+    }
+
+}
+
+// 產品資料 
+//選擇範本
+#typeForProductData-modal tbody tr.odd.selected, table.dataTable.display tbody tr.odd.selected {
+    background-color: #28a745 !important;
+    color: #fff;
+}
+#typeForProductData-modal tbody tr.even.selected, table.dataTable.display tbody tr.even.selected {
+    background-color: #28a745 !important;
+    color: #fff;
+}
+
+
+//節點管制
+//節點管制-表格-狀態
+.nodeStatus{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-radius: 0.25rem;
+    padding: 2px 5px;
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    &.passed{
+        color: #fff;
+        background-color: #17a2b8;
+        border-color: #17a2b8;
+    }
+    &.submit{
+        color: #fff;
+        background-color: #28a745;
+        border-color: #28a745;
+    }
+    &.back{
+        color: #fff;
+        background-color: #dc3545;
+        border-color: #dc3545;
+    }
+    &.changed{
+        color: #000;
+        background-color: #ffc107;
+        border-color: #ffc107;
+    }
+}
+
+
+.responsive{
+    @include media-breakpoint-down(lg){
+        // display: inline-block; 
+        // width: 100% !important;
+        // overflow-x: auto;
+    }
+}
+#customerForGoods{
+    tr{
+        &.selected{
+            background-color: #28a745 !important;
+        }
+    }
+}

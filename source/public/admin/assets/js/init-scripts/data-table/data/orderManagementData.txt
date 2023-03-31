@@ -1,0 +1,67 @@
+{
+  "data": [{
+      "id": "1",
+      "orderNumber": "201800408",
+      "logisticsCompany": "UNIMARTC2C(7-11)",
+      "productName": "包包",
+      "orderPrice": "3100",
+      "deliveryType": "貨到付款",
+      "recipient": "王大美",
+      "RecipientPhone": "0987654321",
+      "RecipientEmail": "",
+      "storeReceiving": "3750",
+      "remarks": "預購",
+      "status": "",
+      "createdDate": "2019-04-05",
+      "modifiedDate": "2019-04-08"
+    },
+    {
+      "id": "2",
+      "orderNumber": "201800407",
+      "logisticsCompany": "FAMIC2C(全家)",
+      "productName": "旅行袋",
+      "orderPrice": "690",
+      "deliveryType": "純配送",
+      "recipient": "王貳美",
+      "RecipientPhone": "0987654321",
+      "RecipientEmail": "",
+      "storeReceiving": "011629",
+      "remarks": "二手",
+      "status": "",
+      "createdDate": "2019-04-05",
+      "modifiedDate": "2019-04-08"
+    },
+    {
+      "id": "3",
+      "orderNumber": "201800406",
+      "logisticsCompany": "HILIFEC2C(萊爾富)",
+      "productName": "行李箱",
+      "orderPrice": "8880",
+      "deliveryType": "貨到付款",
+      "recipient": "王參美",
+      "RecipientPhone": "0987654321",
+      "RecipientEmail": "",
+      "storeReceiving": "011629",
+      "remarks": "",
+      "status": "",
+      "createdDate": "2019-04-05",
+      "modifiedDate": "2019-04-08"
+    },
+    {
+      "id": "4",
+      "orderNumber": "201800405",
+      "logisticsCompany": "UNIMARTC2C(7-11)",
+      "productName": "遊戲",
+      "orderPrice": "1680",
+      "deliveryType": "純配送",
+      "recipient": "王伍美",
+      "RecipientPhone": "0987654321",
+      "RecipientEmail": "",
+      "storeReceiving": "14697",
+      "remarks": "二手",
+      "status": "",
+      "createdDate": "2019-04-05",
+      "modifiedDate": "2019-04-08"
+    }
+  ]
+}

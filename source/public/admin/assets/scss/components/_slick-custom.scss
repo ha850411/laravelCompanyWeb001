@@ -1,0 +1,142 @@
+.slick-center{
+    transform: scale(1.1);
+}
+
+.slick-slide{
+        //增加空隙
+        margin: 15px;
+}
+
+
+
+//det slick
+.center {
+    .slick-slide {
+        // margin: 10px;
+    }
+
+}
+
+.slider-nav img {
+    max-width: 100%;
+}
+
+
+.slider-for {
+    width: 50vw;
+    @include media-breakpoint-down(lg){
+        width: 80vw;
+    }
+    @include media-breakpoint-down(sm){
+        width: 98vw;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+        color: #fff;
+        font-size: 30px;
+    }
+
+    .slick-prev {
+        left: -35px;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.slider-nav slick-slide:hover {
+    cursor: pointer;
+}
+
+.modal-dialog{
+    margin-top: 10vh;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    @include media-breakpoint-down(lg){
+        margin-top: 25vh;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    @include media-breakpoint-down(sm){
+        margin-top: 5vh;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+}
+
+
+.modal{
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+.modal-content {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0 none;
+    border-radius: 0;
+    margin-left: 1px;
+
+    .modal-body {
+        padding: 0;
+
+        @include md {
+            padding-top: 100px;
+        }
+
+        iframe {
+            margin-bottom: -5px;
+        }
+    }
+
+    .modal-header {
+        border: 0 none;
+        //   height: 0;
+        //   min-height: 0;
+        padding: 5px;
+
+        .close {
+            // background-color: #000000 !important;
+            // border: 2px solid #ffffff !important;
+            // border-radius: 13px;
+            color: #ffffff;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 40px;
+            font-weight: 700;
+            // height: 26px;
+            opacity: 1;
+            // padding-bottom: 0;
+            position: absolute;
+            // right: -25vw;
+            right: -500px;
+            text-shadow: none;
+            // top: 20px;
+            top: -2vh;
+            // width: 26px;
+            z-index: 1;
+
+
+            @include media-breakpoint-down(xxl) {
+                right: -17vw;
+                // top: -2vh;
+            }
+            @include media-breakpoint-down(xl) {
+                right: -13vw;
+                // top: -2vh;
+            }
+            @include media-breakpoint-down(lg) {
+                right: -35vw;
+                top: -25px;
+            }
+            @include media-breakpoint-down(md) {
+                right: -20vw;
+                top: -25px;
+            }
+            @include media-breakpoint-down(sm) {
+                right: 5vw;
+                top: 10vh;
+            }
+        }
+    }
+}
+.modal-backdrop{
+    display: none;
+}

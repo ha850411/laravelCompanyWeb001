@@ -1,0 +1,7 @@
+.logisticsBtn{
+    width: 300px;
+
+    @include media-breakpoint-down(lg){
+        width: 100%;
+    }
+}

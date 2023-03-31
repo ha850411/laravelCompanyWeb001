@@ -1,0 +1,10 @@
+
+//signup
+.signup-group {
+    // width: 50rem;
+    width: 80rem;
+
+    @include lg {
+        width: 90%;
+    }
+}

@@ -1,0 +1,75 @@
+//company-Information
+.company {
+    padding: 100px 80px;
+
+    @include lg {
+        padding: 100px 15px;
+    }
+}
+
+.company-logo {
+    width: 250px;
+    height: 250px;
+    border: 1px solid $border-gray;
+    // background-image: url(../images/company-logo.png);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+
+    @include md {
+        width: 300px;
+        height: 300px;
+    }
+
+    @include xs {
+        width: 290px;
+        height: 290px;
+    }
+}
+
+.company-content {
+    padding: 30px 50px;
+
+    @include lg {
+        padding: 30px 0;
+    }
+
+    .content-group {
+        span {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            white-space: nowrap;
+            font-size: 20px;
+            font-weight: 900;
+            color: $primary-green;
+
+            @include md {
+                align-self: flex-start;
+                margin-bottom: 5px;
+            }
+
+            &::before {
+                display: inline-block; // vertical-align: ;
+                content: '';
+                width: 4px;
+                height: 23px;
+                background: $primary-green;
+                margin-right: 10px;
+
+                @include md {
+                    display: none;
+                }
+            }
+        }
+
+        b {
+            margin-left: 40px;
+            color: rgb(49, 49, 49);
+
+            @include md {
+                margin-left: 5px;
+            }
+        }
+    }
+}

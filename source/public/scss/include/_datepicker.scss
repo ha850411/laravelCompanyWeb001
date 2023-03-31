@@ -1,0 +1,159 @@
+v*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+$text-gray:rgb(179, 179, 179);
+$table-green:rgb(18, 181, 176);
+$table-pink:rgb(247, 222, 225);
+$table-blue:rgb(207, 232, 244);
+$border-gray:rgb(220, 220, 220);
+$primary-red:rgb(229,57,53);
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: "微軟正黑體", sans-serif;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+
+
+.datepicker {
+    width: 100%;
+    background: #fff;
+    margin: 0 auto;
+    // overflow: hidden;
+    border: 2px solid $border-gray;
+    border-top: 0;
+    border-bottom: 0;
+    .datepicker-header {
+        height: 250px;
+        background-image: url('https://d13yacurqjgara.cloudfront.net/users/247458/screenshots/2135645/minimalistic_low_poly_style_summer_wallpaper_vector_illustration._small_island_in_the_middle_of_the_ocean_reflecting_in_the_water._tiny_boat_approaching_the_land_on_the_moonlight._flat_design.jpg');
+        background-size: 100%;
+    }
+    .ui-datepicker-inline {
+        padding:5px;
+    }
+    .ui-datepicker-header {
+        padding-top: 20px;
+        text-align: center;
+        padding-bottom: 1em;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+
+        .ui-datepicker-title {
+            color: rgb(129, 206, 200);
+            font-weight: 900;
+            text-transform:capitalize;
+        }
+        .ui-datepicker-prev,
+        .ui-datepicker-next {
+            position: relative;
+            z-index: 6;
+            display: inline;
+            float: left;
+            cursor: pointer;
+            font-size: 1.4em;
+            padding: 0 10px;
+            margin-top: -5px;
+            color: rgb(129, 206, 200);
+            font-weight: 900;
+        }
+        .ui-datepicker-next {
+            float: right;
+        }
+    }
+    .ui-datepicker-calendar {
+        width: 100%;
+        text-align: center;
+        border-spacing: 0;
+        thead {
+            background: $table-green;
+            color: #fff;
+        }
+        tr {
+            // background: #000;
+            position: relative;
+            z-index: 5;
+              th{
+                //   background: $table-green;
+                  &:first-child {
+                    padding-left: 20px;
+                    -moz-border-radius: 50px 0 0 50px;
+                    -webkit-border-radius: 50px 0 0 50px;
+                    border-radius: 50px 0 0 50px;
+                  }
+                  &:last-child {
+                    padding-right: 20px;
+                    -moz-border-radius: 0 50px 50px 0;
+                    -webkit-border-radius: 0 50px 50px 0;
+                    border-radius: 0 50px 50px 0;
+                  } 
+              }
+            th,
+            td {
+                position: relative;
+                z-index: 5;
+                padding: .5em 0;
+                &.ui-datepicker-week-end{
+                    a{
+                        color:$text-gray ;
+                    }
+                }
+            }
+        }
+        a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            display: block;
+            margin: 0 auto;
+            font-size: 16px;
+            width: 30px;
+            height: 30px;
+            line-height: 30px; // border-radius: 50%;
+            border: 1px solid transparent;
+            cursor: pointer;
+        }
+        .ui-datepicker-week {
+            background: rgb(18, 181, 176);
+        }
+        .ui-state-highlight {
+            border-radius: 50px;
+            background-color: $primary-red;
+            color: #fff;
+        }
+        .ui-state-active {
+            // background-color: rgb(208, 232, 244);
+        }
+    }
+}
+
+//bs4 modal
+
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.00001) !important;
+    border: 0;
+}
+
+.have-thing {
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: calc(50% - 2px );
+        width: 4px;
+        height: 4px;
+        background: $primary-red;
+        border-radius: 4px;
+    }
+  }
+  .candidates-room {
+    background-color: $table-pink;
+  }

@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "id": "UNIMARTC2C",
+      "company": "7-11",
+      "createdDate": "2019-04-08",
+      "modifiedDate": "2019-04-09"
+    },
+    {
+      "id": "FAMIC2C",
+      "company": "全家",
+      "createdDate": "2019-04-07",
+      "modifiedDate": "2019-04-09"
+    },
+    {
+      "id": "HILIFEC2C",
+      "company": "萊爾富",
+      "createdDate": "2019-04-06",
+      "modifiedDate": "2019-04-09"
+    }
+  ]
+}

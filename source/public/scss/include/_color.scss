@@ -1,0 +1,19 @@
+$primary-green:rgb(3, 181, 183);
+$bg-green: rgb(0, 168, 181);
+$bg-green2: rgb(1, 199, 182);
+$bg-green3: rgb(0, 180, 181);
+$text-black:rgb(82, 82, 82);
+$text-black2:rgb(67, 67, 67);
+$text-black3:rgb(98, 98, 98);
+$bg-gray:rgb(246, 246, 246);
+$text-gray:rgb(181, 181, 181);
+$text-gray2: rgb(160, 160, 160);
+$border-gray:rgb(220, 220, 220);
+$border-gray2:rgb(204, 204, 204);
+
+// $primary-red: rgb(235, 104, 118);
+// $primary-gray3: rgb(243, 242, 238);
+// $primary-blue:rgb(75, 156, 209);
+.c-green {
+    background-color: $primary-green !important;
+}
